@@ -19,7 +19,7 @@ const useSearchCompanyList = () => {
       url.searchParams.append('pageSize', '12');
 
       const res = await fetch(
-        'https://backend-5bno.onrender.com/home/getJobs?pageNumber=0&pageSize=0&sort',
+        'https://backend-5bno.onrender.com/home/getJobs?pageNumber=0&pageSize=12&sort',
         {
           method: 'GET',
           // headers: { 'Content-Type': 'application/json' },
