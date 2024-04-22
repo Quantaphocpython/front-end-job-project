@@ -72,10 +72,13 @@ const JobSeed: React.FC<JobSeedProps> = ({ dataCompany }) => {
     formData.append('jobId', id + '');
     formData.append('CV', CV ?? '');
 
-    const res = await fetch('http://localhost:8080/candidate/submit-cv', {
-      method: 'PUT',
-      body: formData,
-    });
+    const res = await fetch(
+      'https://backend-5bno.onrender.com/candidate/submit-cv',
+      {
+        method: 'PUT',
+        body: formData,
+      }
+    );
 
     const data = await res.json();
   };
