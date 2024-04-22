@@ -26,6 +26,7 @@ const useSignup = () => {
         'https://backend-5bno.onrender.com/registration/register',
         {
           method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             email,
             password,
